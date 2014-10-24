@@ -2,5 +2,19 @@
 <p>AjaxLoaders.js is a plugin that will add a CSS3 animation as a loading indicator when an Ajax call is made. </p>
 <p>The animations are those found in <a href="https://github.com/tobiasahlin/SpinKit">SpinKit</a>.</p>
 <h2 id="options">Options</h2>
-<p>Spinner Number: Choose one of eight available animations.</p>
-<p>Background Color: Choose the color of the animation.</p>
+<p>spinnerNumber: Choose one of eight available animations.</p>
+<p>backgroundColor: Choose the color of the animation.</p>
+<p>top &amp; left: CSS top and left values can be passed in to change the positioning of the animations on the page.</p>
+<h2 id="usage">Usage</h2>
+<ul>
+<li>Add the class of &quot;loading&quot; to your body tag.</li>
+<li><p>Add the following tag above your closing body tag: </p>
+<pre><code>  &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
+</code></pre></li>
+<li><p>To call the plugin, attach it to the element that triggers your Ajax request. To use it with a button, for example, you&#39;d use code like the following:</p>
+<pre><code>  $(&#39;myButton&#39;).on(&#39;click&#39;, function(){
+      $(this).loaders({spinnerNumber: 6, backgroundColor: &#39;purple&#39;, top: &#39;10%&#39;, left: &#39;90%&#39;});
+      myAjaxCall();
+  });    
+</code></pre></li>
+</ul>
