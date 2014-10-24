@@ -14,8 +14,9 @@ top & left: CSS top and left values can be passed in to change the positioning o
 
 ## Usage
 
+* Include `loaders.css` and `loaders.js` in your project.
 * Add the class of "loading" to your body tag.
-* Add the following tag above your closing body tag: 
+* Add the following element above your closing body tag: 
 	
 		<div class="overlay"></div>
 
@@ -26,4 +27,7 @@ top & left: CSS top and left values can be passed in to change the positioning o
 			myAjaxCall();
 		});	
 
+## Examples
+
+Examples are available at [http://www.phrichards.ca/ajaxloaders/](http://www.phrichards.ca/ajaxloaders/).
 
