@@ -31,3 +31,4 @@ top & left: CSS top and left values can be passed in to change the positioning o
 
 Examples are available at [http://www.phrichards.ca/ajaxloaders/](http://www.phrichards.ca/ajaxloaders/).
 
+The examples use [Mockjax](https://github.com/jakerella/jquery-mockjax) to simulate Ajax requests, but feel free to test it with your own.

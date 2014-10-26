@@ -13,12 +13,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	clear: both;
 }
 
+@import "css/footer";
+
 html, body {
 	min-height: 100%;
 }
 
 body {
  	position: relative;
+ 	background-image: url('../brushed2/brushed.png');
  }
 
 body.loading {
@@ -30,8 +33,13 @@ body.loading .spinner {
 }
 
 h1,
-h2 {
+h2,
+h4 {
 	text-align: center;
+}
+
+h4 {
+	margin-bottom: 0;
 }
 
 button {
@@ -542,4 +550,8 @@ button {
 	transform: scale(1.0);
 	-webkit-transform: scale(1.0);
 	}
+}
+
+footer svg:hover {
+	fill: #008000;
 }
